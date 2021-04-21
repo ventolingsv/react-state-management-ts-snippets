@@ -1,5 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
+
 import { getCount, increment, incrementAsync, RootStore } from "./StoreProvider";
 import { CounterState } from '../Types';
 
@@ -13,7 +14,7 @@ const mapStateToProps = (state: RootStore) => ({
    count: getCount(state)
 });
 
-type CounterProps = CounterState & {
+interface CounterProps extends CounterState {
     increment: () => void
 }
 

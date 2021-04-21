@@ -1,7 +1,9 @@
 import React, { PropsWithChildren } from "react";
 import { Provider } from 'react-redux';
+
 import { Action, applyMiddleware, combineReducers, createStore, Store } from 'redux';
 import thunk, { ThunkAction } from 'redux-thunk';
+
 import {CounterState} from '../Types';
 
 //Action types
@@ -28,7 +30,7 @@ function reducer (state = initialState, action: CounterAction): CounterState {
 }
 
 //Store
-export type RootStore = {
+export interface RootStore {
     reducer: CounterState
 }
 
@@ -50,7 +52,7 @@ export const increment: () => CounterAction = () => ({
 
 export const incrementAsync = (): ThunkAction<void, RootStore, void, Action<string>> => async (dispatch, getState) => {
     console.log(getCount(getState()));
-    await new Promise((resolve) => resolve());
+    await new Promise(setImmediate);
     dispatch(increment());
 };
 
