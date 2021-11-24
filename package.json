@@ -5,21 +5,22 @@
   "dependencies": {
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-redux": "7.2.3",
+    "react-redux": "7.2.6",
     "react-scripts": "4.0.3",
-    "redux": "4.0.5",
-    "redux-thunk": "2.3.0",
-    "typescript": "4.2.4"
+    "redux": "4.1.2",
+    "redux-thunk": "2.4.0",
+    "typescript": "4.5.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "5.11.10",
-    "@testing-library/react": "11.2.6",
-    "@testing-library/user-event": "13.1.5",
-    "@types/jest": "26.0.22",
-    "@types/node": "14.14.41",
-    "@types/react": "17.0.3",
-    "@types/react-dom": "16.9.0",
-    "@types/react-redux": "7.1.16"
+    "@testing-library/dom": "8.11.1",
+    "@testing-library/jest-dom": "5.15.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.5.0",
+    "@types/jest": "27.0.3",
+    "@types/node": "16.11.10",
+    "@types/react": "17.0.36",
+    "@types/react-dom": "17.0.11",
+    "@types/react-redux": "7.1.20"
   },
   "scripts": {
     "start": "react-scripts start",

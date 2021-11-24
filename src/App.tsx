@@ -9,6 +9,7 @@ import { AsyncConnectedStore, ConnectedStore } from './components/redux/StoreCon
 import './App.css';
 import ReducerContextProvider from "./components/reducerContext/ReducerContextProvider";
 import {ReducerContextConsumer1, ReducerContextConsumer2} from "./components/reducerContext/ReducerContextConsumer";
+import {ComponentWithEffects} from "./components/withEffects/ComponentWithEffects";
 
 const App = () => {
     return (
@@ -39,6 +40,10 @@ const App = () => {
                     <ConnectedStore/>
                     <AsyncConnectedStore/>
                 </StoreProvider>
+            </div>
+            <div>
+                <b>withEffect</b>
+                <ComponentWithEffects/>
             </div>
         </div>
     );
